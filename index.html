@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento Mercado Livre - Comece a Vender do Zero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B00',
+                        secondary: '#FFE500',
+                        dark: '#1A1A1A',
+                        light: '#F8F8F8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(255,107,0,0.9) 0%, rgba(255,229,0,0.9) 100%);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .module-card {
+            transition: all 0.3s ease;
+        }
+        .module-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-dark">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50x50" alt="Logo" class="h-10 mr-3">
+                <span class="text-xl font-bold text-primary">VendaNoML</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#diferenciais" class="font-medium hover:text-primary">Diferenciais</a>
+                <a href="#conteudo" class="font-medium hover:text-primary">Conteúdo</a>
+                <a href="#depoimentos" class="font-medium hover:text-primary">Depoimentos</a>
+                <a href="#garantia" class="font-medium hover:text-primary">Garantia</a>
+            </nav>
+            <button class="md:hidden text-dark">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
+                    Descubra como fazer sua primeira venda no Mercado Livre ainda este mês, mesmo sem saber nada de vendas ou tecnologia!
+                </h1>
+                <p class="text-xl mb-8">
+                    Método comprovado que já ajudou mais de 3.200 alunos a começarem a vender online, mesmo começando do zero absoluto.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#oferta" class="bg-white text-primary font-bold py-4 px-8 rounded-lg text-center hover:bg-gray-100 transition duration-300 shadow-lg transform hover:scale-105">
+                        Quero Começar Agora
+                    </a>
+                    <a href="#video" class="bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-lg text-center hover:bg-white hover:text-primary transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-play-circle mr-2"></i> Assistir Vídeo
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="video-container rounded-lg shadow-2xl overflow-hidden">
+                    <iframe src="videoteste.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center">
+                <div class="px-4 py-2 text-center">
+                    <p class="text-3xl font-bold text-primary">3.200+</p>
+                    <p class="text-gray-600">Alunos</p>
+                </div>
+                <div class="px-4 py-2 text-center">
+                    <p class="text-3xl font-bold text-primary">R$ 15M+</p>
+                    <p class="text-gray-600">Em vendas</p>
+                </div>
+                <div class="px-4 py-2 text-center">
+                    <p class="text-3xl font-bold text-primary">4.9/5</p>
+                    <p class="text-gray-600">Avaliações</p>
+                </div>
+                <div class="px-4 py-2 text-center">
+                    <p class="text-3xl font-bold text-primary">97%</p>
+                    <p class="text-gray-600">Taxa de satisfação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Section -->
+    <section class="bg-light py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x300" alt="Jonas Rosa" class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-xl">
+                        <div class="absolute -bottom-3 -right-3 bg-primary text-white rounded-full p-3 shadow-lg">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">Conheça Jonas Rosa, seu mentor no Mercado Livre</h2>
+                    <p class="text-lg mb-4">
+                        Com mais de 8 anos de experiência no Mercado Livre, já ajudei milhares de pessoas a começarem seus negócios online, mesmo sem nenhum conhecimento prévio.
+                    </p>
+                    <p class="text-lg mb-6">
+                        Minha jornada começou quando precisei complementar minha renda e descobri o potencial do Mercado Livre. Hoje, já gerei mais de R$15 milhões em vendas na plataforma e ensino meu método passo a passo para quem quer resultados reais.
+                    </p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-start">
+                            <i class="fas fa-quote-left text-primary text-3xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="italic text-lg mb-4">
+                                    "Meu objetivo é descomplicar o Mercado Livre para que qualquer pessoa, mesmo sem experiência, possa começar a vender e gerar renda extra ou até mesmo viver 100% do seu negócio online."
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="flex -space-x-2 mr-4">
+                                        <img src="https://via.placeholder.com/40x40" alt="Aluno" class="w-10 h-10 rounded-full border-2 border-white">
+                                        <img src="https://via.placeholder.com/40x40" alt="Aluno" class="w-10 h-10 rounded-full border-2 border-white">
+                                        <img src="https://via.placeholder.com/40x40" alt="Aluno" class="w-10 h-10 rounded-full border-2 border-white">
+                                    </div>
+                                    <p class="font-medium">+3.200 alunos transformados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">O que torna nosso método diferente?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Um treinamento completo focado em resultados práticos para quem está começando do zero
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-light p-8 rounded-lg text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hands-helping text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Suporte ao Aluno</h3>
+                    <p class="text-gray-600">
+                        Tire todas suas dúvidas diretamente com nossa equipe de suporte especializada.
+                    </p>
+                </div>
+                <div class="bg-light p-8 rounded-lg text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-infinity text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Acesso Vitalício</h3>
+                    <p class="text-gray-600">
+                        Acesso ilimitado a todas as atualizações do curso sem pagar nada a mais.
+                    </p>
+                </div>
+                <div class="bg-light p-8 rounded-lg text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-road text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Passo a Passo</h3>
+                    <p class="text-gray-600">
+                        Metodologia prática que mostra exatamente o que fazer em cada etapa.
+                    </p>
+                </div>
+                <div class="bg-light p-8 rounded-lg text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Garantia de 14 Dias</h3>
+                    <p class="text-gray-600">
+                        Se não gostar, devolvemos 100% do seu dinheiro sem burocracia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">O que nossos alunos dizem</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Resultados reais de pessoas que começaram do zero como você
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/60x60" alt="Aluno" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Carlos Silva</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Em 3 semanas já tinha feito minha primeira venda! O curso explica tudo de forma tão simples que qualquer um consegue seguir."
+                    </p>
+                    <div class="bg-gray-100 p-3 rounded">
+                        <p class="text-sm font-medium text-primary">
+                            <i class="fas fa-chart-line mr-2"></i> Fez R$ 8.200 em 2 meses
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/60x60" alt="Aluno" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ana Paula</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Depois de tentar sozinha e não conseguir, o método do Jonas me mostrou exatamente onde estava errando. Hoje tenho uma renda extra fixa!"
+                    </p>
+                    <div class="bg-gray-100 p-3 rounded">
+                        <p class="text-sm font-medium text-primary">
+                            <i class="fas fa-chart-line mr-2"></i> Renda extra de R$ 3.500/mês
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/60x60" alt="Aluno" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Roberto Almeida</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "O suporte fez toda diferença! Sempre que tinha dúvida, a equipe respondia rápido e me ajudava a resolver. Recomendo demais!"
+                    </p>
+                    <div class="bg-gray-100 p-3 rounded">
+                        <p class="text-sm font-medium text-primary">
+                            <i class="fas fa-chart-line mr-2"></i> Negócio principal com 5 produtos
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Depoimentos -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <div class="video-container rounded-lg overflow-hidden shadow-xl">
+                        <iframe src="videoteste.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="mt-4 font-medium text-center">Maria - Primeira venda em 12 dias</p>
+                </div>
+                <div>
+                    <div class="video-container rounded-lg overflow-hidden shadow-xl">
+                        <iframe src="videoteste.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="mt-4 font-medium text-center">José - De desempregado a R$ 6k/mês</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo do Curso -->
+    <section id="conteudo" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">O que você vai aprender no treinamento</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Um método passo a passo comprovado para começar a vender no Mercado Livre
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Módulo 1 -->
+                <div class="bg-light p-8 rounded-lg module-card">
+                    <div class="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <span class="text-xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fundamentos do Mercado Livre</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Como funciona a plataforma</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Diferença entre vendas pessoa física e jurídica</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Configuração inicial da conta</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Como evitar bloqueios</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Módulo 2 -->
+                <div class="bg-light p-8 rounded-lg module-card">
+                    <div class="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <span class="text-xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Escolhendo os Produtos Certos</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Como identificar produtos lucrativos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Onde comprar produtos baratos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Análise de concorrência</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Produtos que você deve evitar</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Módulo 3 -->
+                <div class="bg-light p-8 rounded-lg module-card">
+                    <div class="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <span class="text-xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Anúncios que Vendem</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Títulos poderosos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Fotos profissionais com celular</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Descrição persuasiva</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Palavras-chave que aumentam vendas</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Módulo 4 -->
+                <div class="bg-light p-8 rounded-lg module-card">
+                    <div class="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <span class="text-xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Precificação e Lucro</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Como calcular o preço perfeito</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Taxas e comissões explicadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Estratégias para aumentar margem</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Quando fazer promoções</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Módulo 5 -->
+                <div class="bg-light p-8 rounded-lg module-card">
+                    <div class="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <span class="text-xl font-bold">5</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Logística e Atendimento</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Métodos de envio mais baratos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Como embalar corretamente</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Atendimento que gera avaliações 5 estrelas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Como lidar com reclamações</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Módulo 6 -->
+                <div class="bg-light p-8 rounded-lg module-card">
+                    <div class="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <span class="text-xl font-bold">6</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Escalando seu Negócio</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Como aumentar seu catálogo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Ferramentas para automatizar</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>Contratar ajudantes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                            <span>De renda extra para negócio principal</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bônus -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Bônus Exclusivos</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ferramentas e recursos extras para acelerar seus resultados
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-primary text-white p-8 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-4">Bônus Limitados</h3>
+                        <p class="mb-6">Disponíveis apenas para quem se inscrever agora</p>
+                        <div class="bg-white text-primary rounded-lg p-3 text-center font-bold">
+                            Valor total: R$ 497
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <div class="bg-primary text-white rounded-full w-8 h-8 flex-shrink-0 flex items-center justify-center mr-4">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Checklist de Primeira Venda</h4>
+                                    <p class="text-gray-600">Um guia passo a passo para não esquecer nada na hora de criar seu primeiro anúncio.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-primary text-white rounded-full w-8 h-8 flex-shrink-0 flex items-center justify-center mr-4">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Grupo VIP no WhatsApp</h4>
+                                    <p class="text-gray-600">Acesso a uma comunidade exclusiva de alunos para networking e dúvidas.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-primary text-white rounded-full w-8 h-8 flex-shrink-0 flex items-center justify-center mr-4">
+                                    <i class="fas fa-tags"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Mini-curso de Precificação</h4>
+                                    <p class="text-gray-600">Como calcular o preço perfeito para maximizar seu lucro sem perder vendas.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-primary text-white rounded-full w-8 h-8 flex-shrink-0 flex items-center justify-center mr-4">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Modelos de Descrição Prontos</h4>
+                                    <p class="text-gray-600">Descrições profissionais que você pode copiar e adaptar para seus produtos.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantia -->
+    <section id="garantia" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-primary to-secondary rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 p-8 flex flex-col items-center justify-center">
+                        <img src="https://via.placeholder.com/150x150" alt="Selo de Garantia" class="mb-4">
+                        <h3 class="text-2xl font-bold text-white text-center">Garantia de 14 Dias</h3>
+                    </div>
+                    <div class="md:w-2/3 bg-white p-8">
+                        <h3 class="text-2xl font-bold mb-4">Satisfação Garantida ou seu Dinheiro de Volta</h3>
+                        <p class="text-gray-600 mb-6">
+                            Eu sei que esse método funciona porque já transformou a vida de milhares de alunos. Mas se em 14 dias você achar que o treinamento não é para você, basta enviar um email que devolvemos 100% do seu dinheiro, sem perguntas ou burocracia.
+                        </p>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <p class="font-medium">
+                                <i class="fas fa-lock text-primary mr-2"></i> Compra 100% segura | 
+                                <i class="fas fa-shield-alt text-primary mx-2"></i> Dados protegidos | 
+                                <i class="fas fa-credit-card text-primary ml-2"></i> Pagamento seguro
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta -->
+    <section id="oferta" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Comece a Vender no Mercado Livre Hoje</h2>
+                <p class="text-xl text-gray-600">
+                    Aproveite esta oportunidade para transformar sua vida financeira
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 bg-primary text-white">
+                        <h3 class="text-2xl font-bold mb-4">Treinamento Completo</h3>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-2"></i>
+                                <span>6 módulos passo a passo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-2"></i>
+                                <span>Acesso vitalício</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-2"></i>
+                                <span>Suporte exclusivo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-2"></i>
+                                <span>Atualizações gratuitas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-2"></i>
+                                <span>Grupo VIP de alunos</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="bg-white text-primary rounded-lg p-4 mb-6">
+                            <p class="text-sm line-through mb-1">De R$ 997,00</p>
+                            <p class="text-3xl font-bold">12x de R$ 49,70</p>
+                            <p class="text-lg">ou R$ 497,00 à vista</p>
+                        </div>
+                        
+                        <p class="text-sm">
+                            <i class="fas fa-lock mr-1"></i> Pagamento 100% seguro
+                        </p>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold mb-6">Preencha o formulário</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="nome" class="block text-gray-700 mb-2">Nome Completo</label>
+                                <input type="text" id="nome" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">E-mail</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-6">
+                                <label for="cpf" class="block text-gray-700 mb-2">CPF</label>
+                                <input type="text" id="cpf" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-orange-700 text-white font-bold py-4 px-4 rounded-lg transition duration-300 shadow-lg transform hover:scale-105">
+                                Quero Me Inscrever Agora
+                            </button>
+                            
+                            <div class="mt-4 flex items-center">
+                                <i class="fas fa-lock text-primary mr-2"></i>
+                                <p class="text-sm text-gray-600">Seus dados estão protegidos</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Perguntas Frequentes</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Tire suas dúvidas sobre o treinamento
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6 border-b pb-6">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg focus:outline-none">
+                        <span>Preciso ter CNPJ para começar a vender?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-answer mt-3 text-gray-600 hidden">
+                        Não! Você pode começar vendendo como pessoa física (CPF) tranquilamente. No curso ensino como fazer tanto como PF quanto PJ, e quando vale a pena formalizar seu negócio.
+                    </div>
+                </div>
+                
+                <div class="mb-6 border-b pb-6">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg focus:outline-none">
+                        <span>Quanto tempo terei acesso ao curso?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-answer mt-3 text-gray-600 hidden">
+                        O acesso é vitalício! Você pode assistir quando quiser, no seu ritmo, e ainda recebe todas as atualizações futuras sem custo adicional.
+                    </div>
+                </div>
+                
+                <div class="mb-6 border-b pb-6">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg focus:outline-none">
+                        <span>O curso serve para quem já tentou vender e não conseguiu?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-answer mt-3 text-gray-600 hidden">
+                        Com certeza! Mais de 60% dos nossos alunos já tentaram vender por conta própria e não obtiveram resultados. O curso mostra exatamente onde você pode estar errando e como corrigir para começar a vender de verdade.
+                    </div>
+                </div>
+                
+                <div class="mb-6 border-b pb-6">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg focus:outline-none">
+                        <span>Funciona para qualquer tipo de produto?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-answer mt-3 text-gray-600 hidden">
+                        Sim, o método que ensino pode ser aplicado a qualquer produto físico. No curso mostro como identificar os melhores produtos para começar, mas as técnicas de anúncio, precificação e logística servem para qualquer nicho.
+                    </div>
+                </div>
+                
+                <div class="mb-6 border-b pb-6">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg focus:outline-none">
+                        <span>Quanto tempo leva para fazer a primeira venda?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-answer mt-3 text-gray-600 hidden">
+                        A maioria dos nossos alunos faz a primeira venda em até 30 dias após aplicar o método. Alguns conseguem em poucos dias, dependendo do produto e da dedicação. O importante é seguir o passo a passo corretamente.
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg focus:outline-none">
+                        <span>Como é o suporte para tirar dúvidas?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-answer mt-3 text-gray-600 hidden">
+                        Temos uma equipe especializada disponível por email e no grupo VIP do WhatsApp para responder todas suas dúvidas em até 24h úteis. Além disso, no curso mostro os erros mais comuns e como evitá-los.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/40x40" alt="Logo" class="h-10 mr-3">
+                        <span class="text-xl font-bold text-white">VendaNoML</span>
+                    </div>
+                    <p class="text-gray-400">
+                        O treinamento mais completo para começar a vender no Mercado Livre do zero absoluto.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#diferenciais" class="text-gray-400 hover:text-white transition">Diferenciais</a></li>
+                        <li><a href="#conteudo" class="text-gray-400 hover:text-white transition">Conteúdo</a></li>
+                        <li><a href="#depoimentos" class="text-gray-400 hover:text-white transition">Depoimentos</a></li>
+                        <li><a href="#garantia" class="text-gray-400 hover:text-white transition">Garantia</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Suporte</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Central de Ajuda</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Termos de Uso</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Formas de Pagamento</h4>
+                    <div class="grid grid-cols-3 gap-2 mb-4">
+                        <img src="https://via.placeholder.com/50x30" alt="Visa" class="h-8">
+                        <img src="https://via.placeholder.com/50x30" alt="Mastercard" class="h-8">
+                        <img src="https://via.placeholder.com/50x30" alt="Elo" class="h-8">
+                        <img src="https://via.placeholder.com/50x30" alt="Hipercard" class="h-8">
+                        <img src="https://via.placeholder.com/50x30" alt="Boleto" class="h-8">
+                        <img src="https://via.placeholder.com/50x30" alt="Pix" class="h-8">
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Segurança</h4>
+                    <div class="flex space-x-2">
+                        <img src="https://via.placeholder.com/100x40" alt="SSL" class="h-10">
+                        <img src="https://via.placeholder.com/100x40" alt="Seguro" class="h-10">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    © 2023 VendaNoML. Todos os direitos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="#" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
